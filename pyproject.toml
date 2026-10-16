@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smscli"
+version = "0.1.0"
+description = "Read SMS from a connected Android phone over ADB from the command line; read messages are archived locally."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "alexeygrigorev" }]
+keywords = ["sms", "adb", "android", "cli"]
+
+[project.scripts]
+smscli = "smscli.cli:main"
+
+[tool.setuptools]
+packages = ["smscli"]
